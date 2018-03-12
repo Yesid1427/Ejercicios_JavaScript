@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calculadora JavaScript</title>
+
+</head>
+
+<!-- Hacer Un Programa Que Haga Lo Siguiente:
+1. Pida El Nombre
+2. Que Solicite Que Operación Matemática Quiere Hacer: Suma, Resta, Multiplicación o División
+3. Solicite El Número 1 y Número 2
+4. Imprima El Nombre De La Persona Y De El Resultado De La Operación
+-->
+
+<body>
+
+    <h1>CALCULADORA</h1>
+
+    <script>
+        function sumar(num1, num2) {
+            return parseInt(num1) + parseInt(num2);
+        }
+
+        function multiplicar(num1, num2) {
+            return parseInt(num1) * parseInt(num2);
+        }
+
+        function restar(num1, num2) {
+            return parseInt(num1) - parseInt(num2);
+        }
+
+        function dividir(num1, num2) {
+            return parseInt(num1) / parseInt(num2);
+        }
+        //debugger
+
+        var nombre = prompt("CUAL ES SU NOMBRE: ", nombre);
+
+        var operacion = prompt("QUE OPERACION DESEA HACER: 1=Sumar, 2=Multiplicar, 3=Restar, 4=Dividir", operacion);
+
+        var num1 = prompt("INGRESE EL NUMERO 1:", num1);
+
+        var num2 = prompt("INGRESE EL NUMERO 2:", num2);
+
+        if (operacion == "1") {
+            alert("Señor(a) " + nombre + ", La Suma De Los Números " + num1 + " y " + num2 + " Es: " + sumar(num1, num2));
+
+        } else if (operacion == "2") {
+            alert("Señor(a) " + nombre + ", La Multiplicación De Los Números " + num1 + " y " + num2 + " Es: " + multiplicar(num1, num2));
+        } else if (operacion == "3") {
+            alert("Señor(a) " + nombre + ", La Resta De Los Números " + num1 + " y " + num2 + " Es: " + restar(num1, num2));
+        } else if (operacion == "4") {
+            alert("Señor(a) " + nombre + ", La División De Los Números " + num1 + " y " + num2 + " Es: " + dividir(num1, num2));
+        }
+    </script>
+
+</body>
+
+</html>

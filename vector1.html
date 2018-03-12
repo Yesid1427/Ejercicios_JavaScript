@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Calculadora JavaScript</title>
+
+</head>
+
+<!-- Ejercicio: Hacer Un Vector Y Calcular El Número Máximo -->
+
+<body>
+
+    <h1>VECTOR</h1>
+
+    <script>
+        var numeros = new Array;
+        var numero1 = prompt("Ingrese Número 1: ");
+        numeros.push(parseInt(numero1));
+        numero1 = prompt("Ingrese Número 2: ");
+        numeros.push(parseInt(numero1));
+        numero1 = prompt("Ingrese Número 3: ");
+        numeros.push(parseInt(numero1));
+
+        if (numeros[0] == numeros[1] && numeros[0] == numeros[2]) {
+            document.write("Número 1, Número 2 y Número 3 son iguales! y valen: " + numeros[0] + "");
+        } else {
+
+            if (numeros[0] > numeros[1]) {
+                if (numeros[0] > numeros[2]) {
+                    document.write("Número 1 es Mayor y vale: " + numeros[0] + "");
+                } else {
+                    document.write("Número 3 es Mayor y vale: " + numeros[2] + "");
+                }
+            } else {
+                if (numeros[0] < numeros[1]) {
+                    if (numeros[1] > numeros[2]) {
+                        document.write("Número 2 es Mayor y vale: " + numeros[1] + "");
+                    } else {
+                        document.write("Número 3 es Mayor y vale: " + numeros[2] + "");
+                    }
+                }
+            }
+        }
+
+        document.write("<br /> <br /> Número 1 = " + numeros[0] + "<br />" + "Número 2 = " + numeros[1] + "<br />" + "Número 3 = " + numeros[2]);
+    </script>
+
+</body>
+
+</html>
